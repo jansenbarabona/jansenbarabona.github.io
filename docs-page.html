@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>DataBridge Documentation</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="DataBridge Documentation">
+    <meta name="author" content="DataBridge Asia Inc">
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome JS-->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js"></script>
+
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css">
+
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme.min.css">
+
+</head>
+
+<body class="docs-page">
+    <header class="header fixed-top">
+        <div class="branding docs-branding">
+            <div class="container-fluid position-relative py-2">
+                <div class="docs-logo-wrapper">
+                    <button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible mr-2 d-xl-none" type="button">
+	                    <span></span>
+	                    <span></span>
+	                    <span></span>
+	                </button>
+                    <div class="site-logo">
+                        <a class="navbar-brand" href="docs-page.html"><img class="logo-icon mr-2" style="width: 45px; height: 45px;" src="assets/images/features/Logo/DataBridgeLogo.png" alt="logo"><span class="logo-text">DataBridge<span class="text-alt"> <small>Documentation</small></span></span>
+                        </a>
+                    </div>
+                </div>
+                <!--//docs-logo-wrapper-->
+                <div class="docs-top-utilities d-flex justify-content-end align-items-center">
+                    <div class="top-search-box d-none d-lg-flex">
+                        <form class="search-form">
+                            <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
+                            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+                        </form>
+                    </div>
+                    <!--//social-list-->
+                </div>
+                <!--//docs-top-utilities-->
+            </div>
+            <!--//container-->
+        </div>
+        <!--//branding-->
+    </header>
+    <!--//header-->
+
+    <div class="docs-wrapper">
+        <div id="docs-sidebar" class="docs-sidebar">
+            <nav id="docs-nav" class="docs-nav navbar">
+                <ul class="section-items list-unstyled nav flex-column pb-3">
+                    <li class="nav-item section-title"><a class="nav-link scrollto active" href="#section-1"><span class="theme-icon-holder mr-2"><i class="fas fa-map-signs"></i></span>Introduction</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-1">About Us 1.1</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-2">Services 1.2</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-3">Partners 1.3</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-4">Contact 1.4</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-5">Login 1.5</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-6">Callout toast 1.6</a></li>
+                    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-2"><span class="theme-icon-holder mr-2"><i class="fas fa-car"></i></span><small>M A I</small></a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-1">Dashboard 2.1</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-2">Vehicle 2.2</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-2-1">Vehicle Info 2.2.1</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-2-2">Vehicle Registration 2.2.2</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-2-3">Vehicle Info Upload 2.2.3</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-3">Allocated Vehicle 2.3</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-4">Vehicle for Re-Allocate 2.4</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-5">Vehicle for Pull Out 2.5</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-6">Batch Master 2.6</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-7">Batch Process 2.7</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-7-1">Vehicle List for COP 2.7.1</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-7-2">Vehicle List for SOE 2.7.2</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-7-3">Vehicle List for SOC 2.7.3</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-7-4">Vehicle List for CSR 2.7.4</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-7-5">Vehicle List for Dealers 2.7.5</a></li>
+                    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-3"><span class="theme-icon-holder mr-2"><i class="fas fa-shipping-fast"></i></span>Dealer</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-1">Dashboard 3.1</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-2">Client 3.2</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-2-1">Client Registration 3.2.1</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-3">Vehicle Info 3.3</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-3-1">Vehicle Info 3.3.1</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-3-2">Vehicle Info Registration 3.3.2</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-3-3">Vehicle Info Upload 3.3.3</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-4">Allocated Vehicle 3.4</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-5">Batch Process 3.5</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-5-1">Vehicle List for COP 3.5.1</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-5-2">Vehicle List for SOE 3.5.2</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-5-3">Vehicle List for SOC 3.5.3</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-5-4">Vehicle List for CSR 3.5.4</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-5-5">Vehicle List for COC 3.5.5</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-5-6">Vehicle List for PNP 3.5.6</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-6">LTO Registration 3.6</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-6-1">Vehicle for Submission 3.6.1</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-6-2">Allocated Submitted 3.6.2</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-6-3">Allocated Processed 3.6.3</a></li>
+                    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-4"><span class="theme-icon-holder mr-2"><i class="fas fa-cogs"></i></span>Integrations</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-1">Section Item 4.1</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-2">Section Item 4.2</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-3">Section Item 4.3</a></li>
+                    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-5"><span class="theme-icon-holder mr-2"><i class="fas fa-tools"></i></span>Utilities</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-1">Section Item 5.1</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-2">Section Item 5.2</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-3">Section Item 5.3</a></li>
+                    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-6"><span class="theme-icon-holder mr-2"><i class="fas fa-laptop-code"></i></span>Web</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-1">Section Item 6.1</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-2">Section Item 6.2</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-3">Section Item 6.3</a></li>
+                    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-7"><span class="theme-icon-holder mr-2"><i class="fas fa-tablet-alt"></i></span>Mobile</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-1">Section Item 7.1</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-2">Section Item 7.2</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-3">Section Item 7.3</a></li>
+                    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-8"><span class="theme-icon-holder mr-2"><i class="fas fa-box"></i></span>APIs</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-8-1">Section Item 8.1</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-8-2">Section Item 8.2</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-8-3">Section Item 8.3</a></li>
+                    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-9"><span class="theme-icon-holder mr-2"><i class="fas fa-lightbulb"></i></span>FAQs</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-9-1">Section Item 9.1</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-9-2">Section Item 9.2</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-9-3">Section Item 9.3</a></li>
+                </ul>
+
+            </nav>
+            <!--//docs-nav-->
+        </div>
+        <!--//docs-sidebar-->
+        <div class="docs-content">
+            <div class="container">
+                <article class="docs-article" id="section-1">
+                    <header class="docs-header">
+                        <h1 class="docs-heading">Introduction <span class="docs-time">Last updated: 2020-07-09</span></h1>
+                        <section class="docs-intro">
+                            <p><b>DATABRIDGE ASIA INC.</b> was incorporated in the Philippines on February 2008. It is an IT company based in Makati which offers a full range of hardware and software development, quality assurance and IT consulting services
+                                for the domestic and international market. Over the past years, the company has provided services and solutions to customers like PHILAMLIFE, WORKFORCE SOLUTIONS, KFORCE GLOBAL SOLUTIONS, MISYS, and AMMEX. </p>
+                        </section>
+                        <!--//docs-intro-->
+
+                        <h5>DataBridge Homepage</h5>
+                        <p>You can Visit <a class="theme-link" href="https://DataBirdge.com/" target="_blank">DataBridge Asia Inc.</a></p>
+                        <div class="docs-code-block">
+                            <!-- ** Embed github code starts ** -->
+                            <a href="assets/images/features/Homepage/homepage.png" data-title="DataBirdge Homepage" data-toggle="lightbox"><img class="figure-img img-fluid shadow rounded" src="assets/images/features/Homepage/homepage.png" alt="" style="width: 600px;"></a>
+                            <!-- ** Embed github code ends ** -->
+                        </div>
+                        <!--//docs-code-block-->
+
+                        <h5>Other Highlight:</h5>
+                        <p>You can change your highlight using arrow left or right</p>
+                        <a href="assets/images/features/Homepage/homepage0.1.png" data-title="Other Highlight" data-toggle="lightbox"><img class="figure-img img-fluid shadow rounded" src="assets/images/features/Homepage/homepage0.1.png" alt="" style="width: 600px;"></a>
+                        <!--//docs-code-block-->
+
+
+                    </header>
+                    <section class="docs-section" id="item-1-1">
+                        <h2 class="section-heading">About Us 1.1</h2>
+                        <p><b>DATABRIDGE ASIA INC.</b> was incorporated in the Philippines on February 2008. It is an IT company based in Makati which offers a full range of hardware and software development, quality assurance and IT consulting services
+                            for the domestic and international market. Over the past years, the company has provided services and solutions to customers like PHILAMLIFE, WORKFORCE SOLUTIONS, KFORCE GLOBAL SOLUTIONS, MISYS, and AMMEX. </p>
+                        <a href="assets/images/features/Homepage/AboutUs.jpg" data-title="About Us" data-toggle="lightbox"><img class="figure-img img-fluid shadow rounded" src="assets/images/features/Homepage/AboutUs.jpg" alt="" style="width: 600px;"></a>
+
+                        <h5>DataBridge Asia Inc</h5>
+                        <ul>
+                            <li><strong class="mr-1">IT Process Outsourcing</strong> <code></code></li>
+                            <li><strong class="mr-1">IT Resource Development</strong> <code></code></li>
+                            <li><strong class="mr-1">IT Resource Management</strong> <code></code></li>
+                        </ul>
+                        <h5>A member of</h5>
+                        <a href="assets/images/features/Partners/Revised TFA Logo.png" data-title="Team First Asia" data-toggle="lightbox"><img class="figure-img img-fluid shadow rounded" src="assets/images/features/Partners/Revised TFA Logo.png" alt="" style="width: 600px;"></a>
+
+                    </section>
+                    <!--//section-->
+
+                    <section class="docs-section" id="item-1-2">
+                        <h2 class="section-heading">Services 1.2</h2>
+                        <h5>DataBridge Services</h5>
+                        <figure class="figure docs-figure py-3">
+                            <a href="assets/images/features/Services/services0.1.png" data-title="DataBirdge Services" data-toggle="lightbox"><img class="figure-img img-fluid shadow rounded" src="assets/images/features/Services/services0.1.png" alt="" style="width: 600px;"></a>
+
+                        </figure>
+
+
+                        <a href="assets/images/features/Services/services0.2.png" data-title="DataBirdge Services" data-toggle="lightbox"><img class="figure-img img-fluid shadow rounded" src="assets/images/features/Services/services0.2.png" alt="" style="width: 600px;"></a>
+
+                    </section>
+                    <!--//section-->
+
+                    <section class="docs-section" id="item-1-3">
+                        <h2 class="section-heading">Partners 1.3</h2>
+                        <p>THE FIRST ASIA | BRAINSPARKS | BITSPACE
+                            <h5>Our Partners</h5>
+                            <div class="col-lg-12 col-12">
+                                <a href="assets/images/features/Partners/Revised TFA Logo.png" data-title="Team First Asia" data-toggle="lightbox"><img class="figure-img img-fluid shadow rounded col-4" src="assets/images/features/Partners/Revised TFA Logo.png" alt="" style="width: 600px;"></a>
+                                <a href="assets/images/features/Partners/brainsparks new logo.png" data-title="Brainsparks" data-toggle="lightbox"><img class="figure-img img-fluid shadow rounded col-4" src="assets/images/features/Partners/brainsparks new logo.png" alt="" style="width: 600px;"></a>
+                                <a href="assets/images/features/Partners/Revised BITSPACE Logo.png" data-title="Bitspace" data-toggle="lightbox"><img class="figure-img img-fluid shadow rounded col-4" src="assets/images/features/Partners/Revised BITSPACE Logo.png" alt="" style="width: 600px;"></a>
+                            </div>
+                    </section>
+                    <!--//section-->
+
+                    <section class="docs-section" id="item-1-4">
+                        <h2 class="section-heading">Contact 1.4</h2>
+                        <h5>Contact Details</h5>
+                        <p><i class="fas fa-map-marked-alt"></i> -Bitspace, 6th floor, PDCP Bank Centre, Rufino corner Leviste Street, Salcedo Village, Makati City, Metro Manila, Philippines 1227</p>
+                        <p><i class="fas fa-phone-alt"></i> -(632) 8892-5462</p>
+                        <p><i class="fas fa-envelope-open-text"></i> -none</p>
+
+                        <h5>Affiliate Websites</h5>
+                        <p><i class="fas fa-globe"></i> First Asia Venture Capital Inc. - <a class="theme-link" href="http://www.firstasia.com.ph/" target="_blank">First Asia Venture Capital Inc.</a></p>
+                        <p><i class="fas fa-globe"></i> Brainsparks - <a class="theme-link" href="https://www.brainsparks.ph/" target="_blank">Brainsparks</a></p>
+                        <p>Brainsparks - <a class="theme-link" href="https://www.brainsparks.ph/" target="_blank">Brainsparks</a></p>
+                    </section>
+                    <!--//section-->
+                    <section class="docs-section" id="item-1-5">
+                        <h2 class="section-heading">Login 1.5</h2>
+                        <h5>Login Example</h5>
+                        <a href="assets/images/features/Homepage/databridge_login.gif" data-title="DataBirdge Login Example" data-toggle="lightbox"><img class="figure-img img-fluid shadow rounded" src="assets/images/features/Homepage/databridge_login.gif" alt="" style="width: 600px;"></a>
+                        <p>Login your existing account <a class="theme-link" href="https://DataBirdge.com/" target="_blank">DataBridge Asia Inc.</a></p>
+                        <p>Get an account please contact our IT support (632) 8892-5462</p>
+                    </section>
+                    <!--//section-->
+                    <section class="docs-section" id="item-1-6">
+                        <h2 class="section-heading">Callout toast 1.6</h2>
+                        <h5>Callout Examples:</h5>
+                        <div class="callout-block callout-block-info">
+
+                            <div class="content">
+                                <h4 class="callout-title">
+                                    <span class="callout-icon-holder mr-1">
+		                                <i class="fas fa-info-circle"></i>
+		                            </span>
+                                    <!--//icon-holder-->
+                                    Note
+                                </h4>
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium <code>&lt;code&gt;</code> , Nemo enim ipsam voluptatem quia voluptas <a href="#">link example</a> sit aspernatur aut odit aut fugit.</p>
+                            </div>
+                            <!--//content-->
+                        </div>
+                        <!--//callout-block-->
+
+                        <div class="callout-block callout-block-warning">
+                            <div class="content">
+                                <h4 class="callout-title">
+                                    <span class="callout-icon-holder mr-1">
+		                                <i class="fas fa-bullhorn"></i>
+		                            </span>
+                                    <!--//icon-holder-->
+                                    Warning
+                                </h4>
+                                <p>Nunc hendrerit odio quis dignissim efficitur. Proin ut finibus libero. Morbi posuere fringilla felis eget sagittis. Fusce sem orci, cursus in tortor <a href="#">link example</a> tellus vel diam viverra elementum.</p>
+                            </div>
+                            <!--//content-->
+                        </div>
+                        <!--//callout-block-->
+
+                        <div class="callout-block callout-block-success">
+                            <div class="content">
+                                <h4 class="callout-title">
+                                    <span class="callout-icon-holder mr-1">
+		                                <i class="fas fa-thumbs-up"></i>
+		                            </span>
+                                    <!--//icon-holder-->
+                                    Tip
+                                </h4>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. <a href="#">Link example</a> aenean commodo ligula eget dolor.</p>
+                            </div>
+                            <!--//content-->
+                        </div>
+                        <!--//callout-block-->
+
+                        <div class="callout-block callout-block-danger mr-1">
+                            <div class="content">
+                                <h4 class="callout-title">
+                                    <span class="callout-icon-holder">
+		                                <i class="fas fa-exclamation-triangle"></i>
+		                            </span>
+                                    <!--//icon-holder-->
+                                    Danger
+                                </h4>
+                                <p>Morbi eget interdum sapien. Donec sed turpis sed nulla lacinia accumsan vitae ut tellus. Aenean vestibulum <a href="#">Link example</a> maximus ipsum vel dignissim. Morbi ornare elit sit amet massa feugiat, viverra dictum
+                                    ipsum pellentesque. </p>
+                            </div>
+                            <!--//content-->
+                        </div>
+                        <p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque
+                            urna eu leo gravida iaculis.</p>
+                        <!--//callout-block-->
+                    </section>
+                    <!--//section-->
+
+                </article>
+
+                <article class="docs-article" id="section-2">
+                    <header class="docs-header">
+                        <h1 class="docs-heading">MAI<small> | Manufacturer Assembler Importer</small></h1>
+                        <section class="docs-intro">
+                            <p>Section intro goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus condimentum nisl id vulputate. Praesent aliquet varius eros interdum suscipit. Donec eu purus sed nibh convallis bibendum quis
+                                vitae turpis. Duis vestibulum diam lorem, vitae dapibus nibh facilisis a. Fusce in malesuada odio.</p>
+                        </section>
+                        <!--//docs-intro-->
+                    </header>
+                    <section class="docs-section" id="item-2-1">
+                        <h2 class="section-heading">DashBoard 2.1</h2>
+                        <a href="assets/images/features/MAI/mai_dashboard/maidashboard.png" data-title="MAI Dashboard" data-toggle="lightbox"><img class="figure-img img-fluid shadow rounded" src="assets/images/features/MAI/mai_dashboard/maidashboard.png" alt="" style="width: 600px;"></a>
+                        <p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque
+                            urna eu leo gravida iaculis.</p>
+                    </section>
+                    <!--//section-->
+
+                    <section class="docs-section" id="item-2-2">
+                        <h2 class="section-heading">Vehicle 2.2</h2>
+                        <a href="assets/images/features/MAI/vehicle_info/vehicle.gif" data-title="Vehicle" data-toggle="lightbox"><img class="figure-img img-fluid shadow rounded" src="assets/images/features/MAI/vehicle_info/vehicle.gif" alt="" style="width: 250px;"></a>
+                        <p><b>Vehicle</b> -> Vehilce Info | Allocated Vehicle | Vehicle List for Re-Allocate | Vehicle List for Pull Out | Batch Master | <b>Batch Process</b> -> Vehicle List for COP | Vehicle List for SOE | Vehicle List for SOC | Veichle
+                            List for CSR | Vehicle List for Dealers</p>
+
+                    </section>
+                    <!--//section-->
+
+                    <section class="docs-section" id="item-2-2-1">
+                        <h2 class="section-heading">Vehicle Info List 2.2.1</h2>
+                        <figure class="figure docs-figure py-3">
+                            <h5>Vehicle Info List Example 2.2.1</h5>
+
+                            <a href="assets/images/features/MAI/vehicle_info/Vehicle_info_list.png" data-title="Vehicle Info" data-toggle="lightbox"><img class="figure-img img-fluid shadow rounded" src="assets/images/features/MAI/vehicle_info/Vehicle_info_list.png" alt="" style="width: 600px;"></a>
+                            <p><b>Vehicle Info List</b> Create Vehicle click the orange button plus <b>+</b> sign to register our new Vehicle</p>
+                        </figure>
+                        <h5>Vehicle Create New Example 2.2.1</h5>
+                        <a href="assets/images/features/MAI/vehicle_info/vehicle_create.gif" data-title="Vehicle Create" data-toggle="lightbox"><img class="figure-img img-fluid shadow rounded" src="assets/images/features/MAI/vehicle_info/vehicle_create.gif" alt="" style="width: 600px;"></a>
+                        <p><b>Vehicle</b> -> Vehicle Info. Create Vehicle click the orange button plus <b>+</b> sign to register our new Vehicle</p>
+
+                    </section>
+                    <!--//section-->
+
+                    <section class="docs-section" id="item-2-2-2">
+                        <h2 class="section-heading">Vehicle Registration 2.2.2</h2>
+                        <figure class="figure docs-figure py-3">
+                            <h5>Vehicle Registration Form</h5>
+
+                            <a href="assets/images/features/MAI/vehicle_info/vehicle_form_registration.png" data-title="Image Lightbox Example" data-toggle="lightbox"><img class="figure-img img-fluid shadow rounded" src="assets/images/features/MAI/vehicle_info/vehicle_form_registration.png" alt="" style="width: 600px;"></a>
+                            <p><b>Step 1</b> Vehicle Info | <b>Step 2</b> BOC Certefication | <b>Step 3 </b>CSR Info | <b>Step 4</b> Images </p>
+                        </figure>
+                        <h5>Vehicle Info Registration Form Example</h5>
+                        <a href="assets/images/features/MAI/vehicle_info/vehicle_registration.gif" data-title="Image Lightbox Example" data-toggle="lightbox"><img class="figure-img img-fluid shadow rounded" src="assets/images/features/MAI/vehicle_info/vehicle_registration.gif" alt="" style="width: 600px;"></a>
+                        <p><b>Vehicle</b> -> Vehicle Info. Create Vehicle click the orange button plus <b>+</b> sign to register our new Vehicle</p>
+
+                    </section>
+                    <!--//section-->
+
+                    <!-- <section class="docs-section" id="item-2-2-3">
+                        <h2 class="section-heading">Vehicle Info Upload 2.2.3</h2>
+                        <p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque
+                            urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+                        <h5>Image Lightbox Example:</h5>
+                        <img class="figure-img img-fluid shadow rounded" src="assets/images/features/MAI/vehicle_info/uploadnew.gif" alt="" style="width: 600px;"></a>
+                        <figure class="figure docs-figure py-3">
+                            <img class="figure-img img-fluid shadow rounded" src="assets/images/features/MAI/vehicle_info/uploadnew.gif" alt="" style="width: 600px;"></a>
+                            <img class="figure-img img-fluid shadow rounded" src="assets/images/features/MAI/vehicle_info/uploadnew.gif" alt="" style="width: 600px;"></a>
+
+                            <img class="figure-img img-fluid shadow rounded" src="assets/images/features/MAI/vehicle_info/uploadnew.gif" alt="" style="width: 600px;"></a>
+                            <p><b>Vehicle</b> -> Vehilce Info | Allocated Vehicle | Vehicle List for Re-Allocate | Vehicle List for Pull Out | Batch Master | <b>Batch Process</b> -> Vehicle List for COP | Vehicle List for SOE | Vehicle List for SOC | Veichle
+                                List for CSR | Vehicle List for Dealers</p>
+                        </figure>
+                    </section> -->
+                    <section class="docs-section" id="item-2-2-3">
+                        <h2 class="section-heading">Vehicle Info Upload 2.2.3</h2>
+                        <p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque
+                            urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+                        <h5>Upload Multi Vehicle Example:</h5>
+                        <figure class="figure docs-figure py-3">
+                            <!-- <a href="https://unsplash.it/1200/768.jpg?image=250" data-toggle="lightbox" data-title="A random title" data-footer="A custom footer text">
+                                <img src="https://unsplash.it/600.jpg?image=250" class="img-fluid">
+                            </a> -->
+                            <!-- <a href="https://firebasestorage.googleapis.com/v0/b/statusnet-485bb.appspot.com/o/DataBridge%2FNew_upload.gif?alt=media&token=70ad6146-d1b9-4c50-8322-b14df250bbdf" data-title="Upload Multi Vehicle" data-toggle="lightbox">
+                                <img class="figure-img img-fluid shadow rounded" src="https://firebasestorage.googleapis.com/v0/b/statusnet-485bb.appspot.com/o/DataBridge%2FNew_upload.gif?alt=media&token=70ad6146-d1b9-4c50-8322-b14df250bbdf" style="width: 500px;">
+                            </a> -->
+
+                            <!-- <a href="https://imgur.com/mzOty38"><img src="https://i.imgur.com/mzOty38.gif" title="source: imgur.com" /></a> -->
+                            <!-- <a href="https://s7.gifyu.com/images/New_upload.gif" data-title="Upload Multi Vehicle" data-toggle="lightbox">
+                                <img class="figure-img img-fluid shadow rounded" src="https://s7.gifyu.com/images/New_upload.gif" style="width: 500px;">
+                            </a> -->
+                            <!-- <a href="assets/images/features/MAI/vehicle_info/vehicle_registration.gif" data-title="Upload New Vehicle" data-toggle="lightbox"><img class="figure-img img-fluid shadow rounded" src="assets/images/features/MAI/vehicle_info/vehicle_registration.gif" alt="" style="width: 600px;"></a> -->
+                            <!-- <a href="assets/images/features/appify-theme-projects-overview-lg.jpg" data-title="Image Lightbox Example" data-toggle="lightbox"><img class="figure-img img-fluid shadow rounded" src="assets/images/features/appify-add-members.gif" alt="" style="width: 600px;"></a> -->
+                            <figcaption class="figure-caption mt-3"><svg class="svg-inline--fa fa-info-circle fa-w-16 mr-2" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="info-circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"></path></svg>
+                                <!-- <i class="fas fa-info-circle mr-2"></i> -->Credit: the above screencast is taken from <a class="theme-link" href="https://themes.3rdwavemedia.com/bootstrap-templates/product/appify-bootstrap-4-admin-template-for-app-developers/" target="_blank"><svg class="svg-inline--fa fa-external-link-alt fa-w-16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="external-link-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M432,320H400a16,16,0,0,0-16,16V448H64V128H208a16,16,0,0,0,16-16V80a16,16,0,0,0-16-16H48A48,48,0,0,0,0,112V464a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V336A16,16,0,0,0,432,320ZM488,0h-128c-21.37,0-32.05,25.91-17,41l35.73,35.73L135,320.37a24,24,0,0,0,0,34L157.67,377a24,24,0,0,0,34,0L435.28,133.32,471,169c15,15,41,4.5,41-17V24A24,24,0,0,0,488,0Z"></path></svg><!-- <i class="fas fa-external-link-alt"></i> -->Appify theme</a>.</figcaption>
+                        </figure>
+
+                        <h5>Custom Table:</h5>
+                        <div class="table-responsive my-4">
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <th class="theme-bg-light"><a class="theme-link" href="#">Option 1</a></th>
+                                        <td>Option 1 desc lorem ipsum dolor sit amet, consectetur adipiscing elit. </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><a class="theme-link" href="#">Option 2</a></th>
+                                        <td>Option 2 desc lorem ipsum dolor sit amet, consectetur adipiscing elit. </td>
+                                    </tr>
+
+                                    <tr>
+                                        <th class="theme-bg-light"><a class="theme-link" href="#">Option 3</a></th>
+                                        <td>Option 3 desc lorem ipsum dolor sit amet, consectetur adipiscing elit. </td>
+                                    </tr>
+
+                                    <tr>
+                                        <th class="theme-bg-light"><a class="theme-link" href="#">Option 4</a></th>
+                                        <td>Option 4 desc lorem ipsum dolor sit amet, consectetur adipiscing elit. </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--//table-responsive-->
+                        <h5>Stripped Table:</h5>
+                        <div class="table-responsive my-4">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">First</th>
+                                        <th scope="col">Last</th>
+                                        <th scope="col">Handle</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td>@mdo</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Jacob</td>
+                                        <td>Thornton</td>
+                                        <td>@fat</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>Larry</td>
+                                        <td>the Bird</td>
+                                        <td>@twitter</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--//table-responsive-->
+                        <h5>Bordered Dark Table:</h5>
+                        <div class="table-responsive my-4">
+                            <table class="table table-bordered table-dark">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">First</th>
+                                        <th scope="col">Last</th>
+                                        <th scope="col">Handle</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td>@mdo</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Jacob</td>
+                                        <td>Thornton</td>
+                                        <td>@fat</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>Larry</td>
+                                        <td>the Bird</td>
+                                        <td>@twitter</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--//table-responsive-->
+
+
+                    </section>
+                    <!--//section-->
+                    <section class="docs-section" id="item-2-3">
+                        <h2 class="section-heading">Allocated Vehicle 2.3</h2>
+                        <!-- <a href="assets/images/features/MAI/vehicle_info/vehicle.gif" data-title="Image Lightbox Example" data-toggle="lightbox"><img class="figure-img img-fluid shadow rounded" src="assets/images/features/MAI/vehicle_info/vehicle.gif" alt="" style="width: 600px;"></a> -->
+                        <p><b>Vehicle</b> -> Vehilce Info | Allocated Vehicle | Vehicle List for Re-Allocate | Vehicle List for Pull Out | Batch Master | <b>Batch Process</b> -> Vehicle List for COP | Vehicle List for SOE | Vehicle List for SOC | Veichle
+                            List for CSR | Vehicle List for Dealers</p>
+
+                    </section>
+                    <!--//section-->
+
+                    <section class="docs-section" id="item-2-4">
+                        <h2 class="section-heading">Vehicle for Re-Allocate 2.4</h2>
+                        <!-- <a href="assets/images/features/MAI/vehicle_info/vehicle.gif" data-title="Image Lightbox Example" data-toggle="lightbox"><img class="figure-img img-fluid shadow rounded" src="assets/images/features/MAI/vehicle_info/vehicle.gif" alt="" style="width: 600px;"></a> -->
+                        <p><b>Vehicle</b> -> Vehilce Info | Allocated Vehicle | Vehicle List for Re-Allocate | Vehicle List for Pull Out | Batch Master | <b>Batch Process</b> -> Vehicle List for COP | Vehicle List for SOE | Vehicle List for SOC | Veichle
+                            List for CSR | Vehicle List for Dealers</p>
+
+                    </section>
+                    <!--//section-->
+                    <section class="docs-section" id="item-2-5">
+                        <h2 class="section-heading">Vehicle for Pull Out 2.5</h2>
+                        <!-- <a href="assets/images/features/MAI/vehicle_info/vehicle.gif" data-title="Image Lightbox Example" data-toggle="lightbox"><img class="figure-img img-fluid shadow rounded" src="assets/images/features/MAI/vehicle_info/vehicle.gif" alt="" style="width: 600px;"></a> -->
+                        <p><b>Vehicle</b> -> Vehilce Info | Allocated Vehicle | Vehicle List for Re-Allocate | Vehicle List for Pull Out | Batch Master | <b>Batch Process</b> -> Vehicle List for COP | Vehicle List for SOE | Vehicle List for SOC | Veichle
+                            List for CSR | Vehicle List for Dealers</p>
+
+                    </section>
+                    <!--//section-->
+                    <section class="docs-section" id="item-2-6">
+                        <h2 class="section-heading">Batch Master 2.6</h2>
+                        <!-- <a href="assets/images/features/MAI/vehicle_info/vehicle.gif" data-title="Image Lightbox Example" data-toggle="lightbox"><img class="figure-img img-fluid shadow rounded" src="assets/images/features/MAI/vehicle_info/vehicle.gif" alt="" style="width: 600px;"></a> -->
+                        <p><b>Vehicle</b> -> Vehilce Info | Allocated Vehicle | Vehicle List for Re-Allocate | Vehicle List for Pull Out | Batch Master | <b>Batch Process</b> -> Vehicle List for COP | Vehicle List for SOE | Vehicle List for SOC | Veichle
+                            List for CSR | Vehicle List for Dealers</p>
+
+                    </section>
+                    <!--//section-->
+                    <section class="docs-section" id="item-2-7">
+                        <h2 class="section-heading">Batch Process 2.7</h2>
+                        <!-- <a href="assets/images/features/MAI/vehicle_info/vehicle.gif" data-title="Image Lightbox Example" data-toggle="lightbox"><img class="figure-img img-fluid shadow rounded" src="assets/images/features/MAI/vehicle_info/vehicle.gif" alt="" style="width: 600px;"></a> -->
+                        <p><b>Vehicle</b> -> Vehilce Info | Allocated Vehicle | Vehicle List for Re-Allocate | Vehicle List for Pull Out | Batch Master | <b>Batch Process</b> -> Vehicle List for COP | Vehicle List for SOE | Vehicle List for SOC | Veichle
+                            List for CSR | Vehicle List for Dealers</p>
+
+                    </section>
+                    <!--//section-->
+
+                    <section class="docs-section" id="item-2-7-1">
+                        <h2 class="section-heading">Batch Process 2.7.1</h2>
+                        <!-- <a href="assets/images/features/MAI/vehicle_info/vehicle.gif" data-title="Image Lightbox Example" data-toggle="lightbox"><img class="figure-img img-fluid shadow rounded" src="assets/images/features/MAI/vehicle_info/vehicle.gif" alt="" style="width: 600px;"></a> -->
+                        <p><b>Vehicle</b> -> Vehilce Info | Allocated Vehicle | Vehicle List for Re-Allocate | Vehicle List for Pull Out | Batch Master | <b>Batch Process</b> -> Vehicle List for COP | Vehicle List for SOE | Vehicle List for SOC | Veichle
+                            List for CSR | Vehicle List for Dealers</p>
+
+                    </section>
+                    <!--//section-->
+                    <section class="docs-section" id="item-2-7-2">
+                        <h2 class="section-heading">Batch Process 2.7.2</h2>
+                        <!-- <a href="assets/images/features/MAI/vehicle_info/vehicle.gif" data-title="Image Lightbox Example" data-toggle="lightbox"><img class="figure-img img-fluid shadow rounded" src="assets/images/features/MAI/vehicle_info/vehicle.gif" alt="" style="width: 600px;"></a> -->
+                        <p><b>Vehicle</b> -> Vehilce Info | Allocated Vehicle | Vehicle List for Re-Allocate | Vehicle List for Pull Out | Batch Master | <b>Batch Process</b> -> Vehicle List for COP | Vehicle List for SOE | Vehicle List for SOC | Veichle
+                            List for CSR | Vehicle List for Dealers</p>
+
+                    </section>
+                    <!--//section-->
+                    <section class="docs-section" id="item-2-7-3">
+                        <h2 class="section-heading">Batch Process 2.7.3</h2>
+                        <!-- <a href="assets/images/features/MAI/vehicle_info/vehicle.gif" data-title="Image Lightbox Example" data-toggle="lightbox"><img class="figure-img img-fluid shadow rounded" src="assets/images/features/MAI/vehicle_info/vehicle.gif" alt="" style="width: 600px;"></a> -->
+                        <p><b>Vehicle</b> -> Vehilce Info | Allocated Vehicle | Vehicle List for Re-Allocate | Vehicle List for Pull Out | Batch Master | <b>Batch Process</b> -> Vehicle List for COP | Vehicle List for SOE | Vehicle List for SOC | Veichle
+                            List for CSR | Vehicle List for Dealers</p>
+
+                    </section>
+                    <!--//section-->
+                    <section class="docs-section" id="item-2-7-4">
+                        <h2 class="section-heading">Batch Process 2.7.4</h2>
+                        <!-- <a href="assets/images/features/MAI/vehicle_info/vehicle.gif" data-title="Image Lightbox Example" data-toggle="lightbox"><img class="figure-img img-fluid shadow rounded" src="assets/images/features/MAI/vehicle_info/vehicle.gif" alt="" style="width: 600px;"></a> -->
+                        <p><b>Vehicle</b> -> Vehilce Info | Allocated Vehicle | Vehicle List for Re-Allocate | Vehicle List for Pull Out | Batch Master | <b>Batch Process</b> -> Vehicle List for COP | Vehicle List for SOE | Vehicle List for SOC | Veichle
+                            List for CSR | Vehicle List for Dealers</p>
+
+                    </section>
+                    <!--//section-->
+
+                    <section class="docs-section" id="item-2-7-5">
+                        <h2 class="section-heading">Batch Process 2.7-5</h2>
+                        <!-- <a href="assets/images/features/MAI/vehicle_info/vehicle.gif" data-title="Image Lightbox Example" data-toggle="lightbox"><img class="figure-img img-fluid shadow rounded" src="assets/images/features/MAI/vehicle_info/vehicle.gif" alt="" style="width: 600px;"></a> -->
+                        <p><b>Vehicle</b> -> Vehilce Info | Allocated Vehicle | Vehicle List for Re-Allocate | Vehicle List for Pull Out | Batch Master | <b>Batch Process</b> -> Vehicle List for COP | Vehicle List for SOE | Vehicle List for SOC | Veichle
+                            List for CSR | Vehicle List for Dealers</p>
+
+                    </section>
+                    <!--//section-->
+                </article>
+                <!--//docs-article-->
+
+                <article class="docs-article" id="section-3">
+                    <header class="docs-header">
+                        <h1 class="docs-heading">Dealer</h1>
+                        <section class="docs-intro">
+                            <p>Section intro goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus condimentum nisl id vulputate. Praesent aliquet varius eros interdum suscipit. Donec eu purus sed nibh convallis bibendum quis
+                                vitae turpis. Duis vestibulum diam lorem, vitae dapibus nibh facilisis a. Fusce in malesuada odio.</p>
+                        </section>
+                        <!--//docs-intro-->
+                    </header>
+                    <section class="docs-section" id="item-3-1">
+                        <h2 class="section-heading">Dashboard 3.1</h2>
+                        <!-- <a href="assets/images/features/Dealer/dealerdashboard.png" data-title="Image Lightbox Example" data-toggle="lightbox"><img class="figure-img img-fluid shadow rounded" src="assets/images/features/Dealer/dealerdashboard.png" alt="" style="width: 600px;"></a> -->
+                        <p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque
+                            urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+                    </section>
+                    <!--//section-->
+
+                    <section class="docs-section" id="item-3-2">
+                        <h2 class="section-heading">Client 3.2</h2>
+                        <!-- <a href="assets/images/features/Dealer/Client/Clientlist.png" data-title="Image Lightbox Example" data-toggle="lightbox"><img class="figure-img img-fluid shadow rounded" src="assets/images/features/Dealer/Client/Clientlist.png" alt="" style="width: 600px;"></a> -->
+                        <p><b>Client List</b> Create Client click the orange button plus <b>+</b> sign to register our new Client Costumer </p>
+                        <!-- <a href="assets/images/features/Dealer/Client/Clientadd.png" data-title="Image Lightbox Example" data-toggle="lightbox"><img class="figure-img img-fluid shadow rounded" src="assets/images/features/Dealer/Client/Clientadd.png" alt=""></a> -->
+
+                    </section>
+                    <!--//section-->
+
+                    <section class="docs-section" id="item-3-2-1">
+                        <h2 class="section-heading">Client Registration 3.2.1</h2>
+                        <!-- <a href="assets/images/features/Dealer/Client/Clientlist.png" data-title="Image Lightbox Example" data-toggle="lightbox"><img class="figure-img img-fluid shadow rounded" src="assets/images/features/Dealer/Client/Clientlist.png" alt="" style="width: 600px;"></a> -->
+                        <!-- <p><b>Client List</b> Create Client click the orange button plus <b>+</b> sign to register our new Client Costumer </p> -->
+                        <a href="assets/images/features/Dealer/Client/Clientadd.png" data-title="Image Lightbox Example" data-toggle="lightbox"><img class="figure-img img-fluid shadow rounded" src="assets/images/features/Dealer/Client/Clientadd.png" alt=""></a>
+
+                    </section>
+                    <!--//section-->
+
+                    <section class="docs-section" id="item-3-3">
+                        <h2 class="section-heading">Vehicle Info 3.3</h2>
+                        <p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque
+                            urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+                    </section>
+                    <!--//section-->
+
+                    <section class="docs-section" id="item-3-3-1">
+                        <h2 class="section-heading">Vehicle Info 3.3.1</h2>
+                        <p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque
+                            urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+                    </section>
+                    <!--//section-->
+
+                    <section class="docs-section" id="item-3-3-2">
+                        <h2 class="section-heading">Vehicle Info Registration 3.3.2</h2>
+                        <p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque
+                            urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+                    </section>
+                    <!--//section-->
+
+                    <section class="docs-section" id="item-3-3-3">
+                        <h2 class="section-heading">Vehicle Info Upload 3.3.3</h2>
+                        <p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque
+                            urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+                    </section>
+                    <!--//section-->
+
+                    <section class="docs-section" id="item-3-4">
+                        <h2 class="section-heading">Allocated Vehicle 3.4</h2>
+                        <p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque
+                            urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+                    </section>
+                    <!--//section-->
+
+                    <section class="docs-section" id="item-3-5">
+                        <h2 class="section-heading">Batch Process 3.5</h2>
+                        <p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque
+                            urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+                    </section>
+                    <!--//section-->
+
+                    <section class="docs-section" id="item-3-5-1">
+                        <h2 class="section-heading">Vehicle List for COP 3.5.1</h2>
+                        <p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque
+                            urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+                    </section>
+                    <!--//section-->
+
+                    <section class="docs-section" id="item-3-5-2">
+                        <h2 class="section-heading">Vehicle List for SOE 3.5.2</h2>
+                        <p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque
+                            urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+                    </section>
+                    <!--//section-->
+
+                    <section class="docs-section" id="item-3-5-3">
+                        <h2 class="section-heading">Vehicle List for SOC 3.5.3</h2>
+                        <p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque
+                            urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+                    </section>
+                    <!--//section-->
+
+                    <section class="docs-section" id="item-3-5-4">
+                        <h2 class="section-heading">Vehicle List for CSR 3.5.4</h2>
+                        <p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque
+                            urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+                    </section>
+                    <!--//section-->
+
+                    <section class="docs-section" id="item-3-5-5">
+                        <h2 class="section-heading">Vehicle List for COC 3.5.5</h2>
+                        <p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque
+                            urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+                    </section>
+                    <!--//section-->
+
+                    <section class="docs-section" id="item-3-5-6">
+                        <h2 class="section-heading">Vehicle List for PNP 3.5.6</h2>
+                        <p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque
+                            urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+                    </section>
+                    <!--//section-->
+                    <section class="docs-section" id="item-3-6">
+                        <h2 class="section-heading">LTO Registration 3.6</h2>
+                        <p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque
+                            urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+                    </section>
+                    <!--//section-->
+
+                    <section class="docs-section" id="item-3-6-1">
+                        <h2 class="section-heading">Vehicle for Submission 3.6.1</h2>
+                        <p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque
+                            urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+                    </section>
+                    <!--//section-->
+
+                    <section class="docs-section" id="item-3-6-2">
+                        <h2 class="section-heading">Allocated Submitted 3.6.2</h2>
+                        <p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque
+                            urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+                    </section>
+                    <!--//section-->
+
+                    <section class="docs-section" id="item-3-6-3">
+                        <h2 class="section-heading">Allocated Processed 3.6.3</h2>
+                        <p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque
+                            urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+                    </section>
+                    <!--//section-->
+                </article>
+                <!--//docs-article-->
+
+                <article class="docs-article" id="section-4">
+                    <header class="docs-header">
+                        <h1 class="docs-heading">Intergrations</h1>
+                        <section class="docs-intro">
+                            <p>Section intro goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus condimentum nisl id vulputate. Praesent aliquet varius eros interdum suscipit. Donec eu purus sed nibh convallis bibendum quis
+                                vitae turpis. Duis vestibulum diam lorem, vitae dapibus nibh facilisis a. Fusce in malesuada odio.</p>
+                        </section>
+                        <!--//docs-intro-->
+                    </header>
+                    <section class="docs-section" id="item-4-1">
+                        <h2 class="section-heading">Section Item 4.1</h2>
+                        <p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque
+                            urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+                    </section>
+                    <!--//section-->
+
+                    <section class="docs-section" id="item-4-2">
+                        <h2 class="section-heading">Section Item 4.2</h2>
+                        <p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque
+                            urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+                    </section>
+                    <!--//section-->
+
+                    <section class="docs-section" id="item-4-3">
+                        <h2 class="section-heading">Section Item 4.3</h2>
+                        <p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque
+                            urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+                    </section>
+                    <!--//section-->
+                </article>
+                <!--//docs-article-->
+
+                <article class="docs-article" id="section-5">
+                    <header class="docs-header">
+                        <h1 class="docs-heading">Utilities</h1>
+                        <section class="docs-intro">
+                            <p>Section intro goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus condimentum nisl id vulputate. Praesent aliquet varius eros interdum suscipit. Donec eu purus sed nibh convallis bibendum quis
+                                vitae turpis. Duis vestibulum diam lorem, vitae dapibus nibh facilisis a. Fusce in malesuada odio.</p>
+                        </section>
+                        <!--//docs-intro-->
+                    </header>
+                    <section class="docs-section" id="item-5-1">
+                        <h2 class="section-heading">Section Item 5.1</h2>
+                        <p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque
+                            urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+                    </section>
+                    <!--//section-->
+
+                    <section class="docs-section" id="item-5-2">
+                        <h2 class="section-heading">Section Item 5.2</h2>
+                        <p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque
+                            urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+                    </section>
+                    <!--//section-->
+
+                    <section class="docs-section" id="item-5-3">
+                        <h2 class="section-heading">Section Item 5.3</h2>
+                        <p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque
+                            urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+                    </section>
+                    <!--//section-->
+                </article>
+                <!--//docs-article-->
+
+
+                <article class="docs-article" id="section-6">
+                    <header class="docs-header">
+                        <h1 class="docs-heading">Web</h1>
+                        <section class="docs-intro">
+                            <p>Section intro goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus condimentum nisl id vulputate. Praesent aliquet varius eros interdum suscipit. Donec eu purus sed nibh convallis bibendum quis
+                                vitae turpis. Duis vestibulum diam lorem, vitae dapibus nibh facilisis a. Fusce in malesuada odio.</p>
+                        </section>
+                        <!--//docs-intro-->
+                    </header>
+                    <section class="docs-section" id="item-6-1">
+                        <h2 class="section-heading">Section Item 6.1</h2>
+                        <p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque
+                            urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+                    </section>
+                    <!--//section-->
+
+                    <section class="docs-section" id="item-6-2">
+                        <h2 class="section-heading">Section Item 6.2</h2>
+                        <p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque
+                            urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+                    </section>
+                    <!--//section-->
+
+                    <section class="docs-section" id="item-6-3">
+                        <h2 class="section-heading">Section Item 6.3</h2>
+                        <p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque
+                            urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+                    </section>
+                    <!--//section-->
+                </article>
+                <!--//docs-article-->
+
+
+                <article class="docs-article" id="section-7">
+                    <header class="docs-header">
+                        <h1 class="docs-heading">Mobile</h1>
+                        <section class="docs-intro">
+                            <p>Section intro goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus condimentum nisl id vulputate. Praesent aliquet varius eros interdum suscipit. Donec eu purus sed nibh convallis bibendum quis
+                                vitae turpis. Duis vestibulum diam lorem, vitae dapibus nibh facilisis a. Fusce in malesuada odio.</p>
+                        </section>
+                        <!--//docs-intro-->
+                    </header>
+                    <section class="docs-section" id="item-7-1">
+                        <h2 class="section-heading">Section Item 7.1</h2>
+                        <p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque
+                            urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+                    </section>
+                    <!--//section-->
+
+                    <section class="docs-section" id="item-7-2">
+                        <h2 class="section-heading">Section Item 7.2</h2>
+                        <p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque
+                            urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+                    </section>
+                    <!--//section-->
+
+                    <section class="docs-section" id="item-7-3">
+                        <h2 class="section-heading">Section Item 7.3</h2>
+                        <p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque
+                            urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+                    </section>
+                    <!--//section-->
+                </article>
+                <!--//docs-article-->
+
+
+                <article class="docs-article" id="section-8">
+                    <header class="docs-header">
+                        <h1 class="docs-heading">APIs</h1>
+                        <section class="docs-intro">
+                            <p>Section intro goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus condimentum nisl id vulputate. Praesent aliquet varius eros interdum suscipit. Donec eu purus sed nibh convallis bibendum quis
+                                vitae turpis. Duis vestibulum diam lorem, vitae dapibus nibh facilisis a. Fusce in malesuada odio.</p>
+                        </section>
+                        <!--//docs-intro-->
+                    </header>
+                    <section class="docs-section" id="item-8-1">
+                        <h2 class="section-heading">Section Item 8.1</h2>
+                        <p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque
+                            urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+                    </section>
+                    <!--//section-->
+
+                    <section class="docs-section" id="item-8-2">
+                        <h2 class="section-heading">Section Item 8.2</h2>
+                        <p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque
+                            urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+                    </section>
+                    <!--//section-->
+
+                    <section class="docs-section" id="item-8-3">
+                        <h2 class="section-heading">Section Item 8.3</h2>
+                        <p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque
+                            urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+                    </section>
+                    <!--//section-->
+                </article>
+                <!--//docs-article-->
+
+
+                <article class="docs-article" id="section-9">
+                    <header class="docs-header">
+                        <h1 class="docs-heading">FAQs</h1>
+                        <section class="docs-intro">
+                            <p>Section intro goes here. You can list all your FAQs using the format below.</p>
+                        </section>
+                        <!--//docs-intro-->
+                    </header>
+                    <section class="docs-section" id="item-9-1">
+                        <h2 class="section-heading">Section Item 9.1 <small>(FAQ Category One)</small></h2>
+                        <h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>What's sit amet quam eget lacinia?</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+                            eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis
+                            pretium.
+                        </p>
+                        <h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>How to ipsum dolor sit amet quam tortor?</h5>
+                        <p>Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus.
+                            Nullam accumsan lorem in dui. </p>
+                        <h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>Can I bibendum sodales?</h5>
+                        <p>Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. </p>
+                        <h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>Where arcu sed urna gravida?</h5>
+                        <p>Aenean et sodales nisi, vel efficitur sapien. Quisque molestie diam libero, et elementum diam mollis ac. In dignissim aliquam est eget ullamcorper. Sed id sodales tortor, eu finibus leo. Vivamus dapibus sollicitudin justo vel fermentum.
+                            Curabitur nec arcu sed urna gravida lobortis. Donec lectus est, imperdiet eu viverra viverra, ultricies nec urna. </p>
+                    </section>
+                    <!--//section-->
+
+                    <section class="docs-section" id="item-9-2">
+                        <h2 class="section-heading">Section Item 9.2 <small>(FAQ Category Two)</small></h2>
+                        <h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>What's sit amet quam eget lacinia?</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+                            eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis
+                            pretium.
+                        </p>
+                        <h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>How to ipsum dolor sit amet quam tortor?</h5>
+                        <p>Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus.
+                            Nullam accumsan lorem in dui. </p>
+                        <h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>Can I bibendum sodales?</h5>
+                        <p>Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. </p>
+                        <h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>Where arcu sed urna gravida?</h5>
+                        <p>Aenean et sodales nisi, vel efficitur sapien. Quisque molestie diam libero, et elementum diam mollis ac. In dignissim aliquam est eget ullamcorper. Sed id sodales tortor, eu finibus leo. Vivamus dapibus sollicitudin justo vel fermentum.
+                            Curabitur nec arcu sed urna gravida lobortis. Donec lectus est, imperdiet eu viverra viverra, ultricies nec urna. </p>
+                    </section>
+                    <!--//section-->
+
+                    <section class="docs-section" id="item-9-3">
+                        <h2 class="section-heading">Section Item 9.3 <small>(FAQ Category Three)</small></h2>
+                        <h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>How to dapibus sollicitudin justo vel fermentum?</h5>
+                        <p>Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus.
+                            Nullam accumsan lorem in dui. </p>
+                        <h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>How long bibendum sodales?</h5>
+                        <p>Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. </p>
+                        <h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>Where dapibus sollicitudin?</h5>
+                        <p>Aenean et sodales nisi, vel efficitur sapien. Quisque molestie diam libero, et elementum diam mollis ac. In dignissim aliquam est eget ullamcorper. Sed id sodales tortor, eu finibus leo. Vivamus dapibus sollicitudin justo vel fermentum.
+                            Curabitur nec arcu sed urna gravida lobortis. Donec lectus est, imperdiet eu viverra viverra, ultricies nec urna. </p>
+                    </section>
+                    <!--//section-->
+                </article>
+                <!--//docs-article-->
+
+                <footer class="footer">
+                    <div class="container text-center py-5">
+                        <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
+                        <small class="copyright">Designed with <i class="fas fa-heart" style="color: #fb866a;"></i> by <a class="theme-link" href="http://DataBirdge.com" target="_blank">Databridge Asia Inc</a> for developers</small>
+                        <ul class="social-list list-unstyled pt-4 mb-0">
+                            <li class="list-inline-item"><a href="#"><i class="fab fa-github fa-fw"></i></a></li>
+                            <li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
+                            <li class="list-inline-item"><a href="#"><i class="fab fa-slack fa-fw"></i></a></li>
+                            <li class="list-inline-item"><a href="#"><i class="fab fa-product-hunt fa-fw"></i></a></li>
+                            <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f fa-fw"></i></a></li>
+                            <li class="list-inline-item"><a href="#"><i class="fab fa-instagram fa-fw"></i></a></li>
+                        </ul>
+                        <!--//social-list-->
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <!--//docs-wrapper-->
+
+
+    <!-- Javascript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/plugins/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <!-- Page Specific JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+    <script src="assets/js/highlight-custom.js"></script>
+    <script src="assets/plugins/jquery.scrollTo.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+    <script src="assets/js/docs.min.js"></script>
+
+</body>
+
+</html>
