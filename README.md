@@ -67,7 +67,10 @@
     src="https://www.facebook.com/tr?id=1506230579705064&ev=PageView&noscript=1"
     /></noscript>
     <!-- End Facebook Pixel Code -->
-
+<script src="https://browser.sentry-cdn.com/5.19.2/bundle.min.js" integrity="sha384-JpEWxJ7oLRn+baXBgcCKEv73uYWsgouzEResgJneOXvTjDZ+1crAXcNAKZoiL96Z" crossorigin="anonymous">
+</script>
+Sentry.init({ dsn: 'https://b72ac19045ae40a8a040a6ac4f14e299@o367167.ingest.sentry.io/5340178' });
+myUndefinedFunction();
 </head>
 
 <body>
@@ -620,10 +623,7 @@
     <script src="assets/js/typewriter-custom.min.js"></script>
     <script src="assets/plugins/tiny-slider/tiny-slider.js"></script>
     <script src="assets/js/tinyslider-custom.js"></script>
-<script src="https://browser.sentry-cdn.com/5.19.2/bundle.min.js" integrity="sha384-JpEWxJ7oLRn+baXBgcCKEv73uYWsgouzEResgJneOXvTjDZ+1crAXcNAKZoiL96Z" crossorigin="anonymous">
-</script>
-Sentry.init({ dsn: 'https://b72ac19045ae40a8a040a6ac4f14e299@o367167.ingest.sentry.io/5340178' });
-myUndefinedFunction();
+
 </body>
 
 </html>
