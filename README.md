@@ -618,8 +618,8 @@
     <script src="assets/js/highlight-custom.min.js"></script>
     <script src="assets/plugins/typewriterjs/core.min.js"></script>
     <script src="assets/js/typewriter-custom.min.js"></script>
-    <script src="assets/plugins/tiny-slider/tiny-slider.js"></script>
-    <script src="assets/js/tinyslider-custom.js"></script>
+    <script src="assets/plugins/tiny-slider/tiny-slider.min.js"></script>
+    <script src="assets/js/tinyslider-custom.min.js"></script>
 
 </body>
 
