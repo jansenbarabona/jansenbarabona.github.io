@@ -67,7 +67,6 @@
     src="https://www.facebook.com/tr?id=1506230579705064&ev=PageView&noscript=1"
     /></noscript>
     <!-- End Facebook Pixel Code -->
-
 </head>
 
 <body>
@@ -615,9 +614,9 @@
 
     <!-- Page Specific JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
-    <script src="assets/js/highlight-custom.js"></script>
-    <script src="assets/plugins/typewriterjs/core.js"></script>
-    <script src="assets/js/typewriter-custom.js"></script>
+    <script src="assets/js/highlight-custom.min.js"></script>
+    <script src="assets/plugins/typewriterjs/core.min.js"></script>
+    <script src="assets/js/typewriter-custom.min.js"></script>
     <script src="assets/plugins/tiny-slider/tiny-slider.js"></script>
     <script src="assets/js/tinyslider-custom.js"></script>
 
