@@ -1,0 +1,21 @@
+CACHE MANIFEST
+#DATE 2016-02-04
+CACHE:
+assets/css/index-theme.min.css
+
+assets/images/svg/electric_car_motor_v2.svg
+assets/images/features/Logo/DataBridgeLogo.png
+assets/images/features/Logo/landbank.jpg
+assets/images/features/Logo/aws.png
+assets/images/features/Logo/LTO.png
+assets/images/features/Logo/DOTR.png
+assets/images/features/Logo/stripe.png
+
+assets/css/theme.min.css
+docs-page.html
+
+NETWORK:
+*
+
+FALLBACK:
+#static.html
