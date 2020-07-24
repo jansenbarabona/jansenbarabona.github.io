@@ -47,7 +47,7 @@
                 <div class="docs-top-utilities d-flex justify-content-end align-items-center">
                     <div class="top-search-box d-none d-lg-flex">
                         <form class="search-form">
-                            <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
+                            <input type="text" id="searchformbyid" placeholder="Search the docs..." name="search" class="form-control search-input">
                             <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
                         </form>
                     </div>
@@ -64,7 +64,7 @@
     <div class="docs-wrapper">
         <div id="docs-sidebar" class="docs-sidebar">
             <nav id="docs-nav" class="docs-nav navbar">
-                <ul class="section-items list-unstyled nav flex-column pb-3">
+                <ul id="docs-search" class="section-items list-unstyled nav flex-column pb-3">
                     <li class="nav-item section-title"><a class="nav-link scrollto active" href="#section-1"><span class="theme-icon-holder mr-2"><i class="fas fa-map-signs"></i></span>Introduction</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-1-1">About Us 1.1</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-1-2">Services 1.2</a></li>
@@ -918,6 +918,34 @@
     <script src="assets/plugins/jquery.scrollTo.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
     <script src="assets/js/docs.min.js"></script>
+    <script>
+        // Get input element
+        let filterInput = document.getElementById('searchformbyid');
+        // Add event listener
+        filterInput.addEventListener('keyup', filterNames);
+
+        function filterNames() {
+            // Get value of input
+            let filterValue = document.getElementById('searchformbyid').value.toUpperCase();
+
+            // Get names ul
+            let ul = document.getElementById('docs-search');
+            // Get lis from ul
+            let li = ul.querySelectorAll('li.nav-item');
+
+            // Loop through collection-item lis
+            for (let i = 0; i < li.length; i++) {
+                let a = li[i].getElementsByTagName('a')[0];
+                // If matched
+                if (a.innerHTML.toUpperCase().indexOf(filterValue) > -1) {
+                    li[i].style.display = '';
+                } else {
+                    li[i].style.display = 'none';
+                }
+            }
+
+        }
+    </script>
 
 </body>
 
