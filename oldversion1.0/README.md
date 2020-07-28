@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- <html lang="en" manifest="manifest.appcache"> -->
 
 <head>
     <title>DataBridge Asia Inc.</title>
@@ -12,7 +11,7 @@
     <meta name="description" content="DataBridge Asia Inc.">
     <meta name="author" content="DataBridge Asia Inc.">
     <link rel="shortcut icon" href="favicon.ico">
-    <link rel="canonical" href="https://alexcican.com/post/single-post" />
+
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
 
@@ -24,11 +23,50 @@
 
     <!-- Theme CSS -->
     <link id="theme-style" rel="stylesheet" href="assets/css/index-theme.min.css">
-    <link rel="manifest" href="manifest.json">
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-24707561-58"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-24707561-58');
+    </script>
 
 
+
+    <!-- Facebook Pixel Code -->
+    <script>
+        ! function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window,
+            document, 'script', '//connect.facebook.net/en_US/fbevents.js');
+
+        fbq('init', '1506230579705064');
+        fbq('track', "PageView");
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1506230579705064&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
 </head>
 
 <body>
@@ -37,7 +75,7 @@
             <div class="container-fluid position-relative">
                 <nav class="navbar navbar-expand-lg">
                     <div class="site-logo">
-                        <a class="navbar-brand" href="index.html"><img class="logo-icon mr-2" style="width: 45px; height: 45px;" src="assets/images/features/Logo/DataBridgeLogo.png" alt="logo"><span class="logo-text">DataBridge<span class="text-alt"> <small></small></span></span>
+                        <a class="navbar-brand" href="docs-page.html"><img class="logo-icon mr-2" style="width: 45px; height: 45px;" src="assets/images/features/Logo/DataBridgeLogo.png" alt="logo"><span class="logo-text">DataBridge<span class="text-alt"> <small></small></span></span>
                         </a>
                     </div>
 
@@ -62,10 +100,7 @@
                             <li class="nav-item mr-lg-4">
                                 <a class="nav-link" href="pricing.html">Pricing</a>
                             </li>
-                            <li class="nav-item mr-lg-4">
-                                <a class="nav-link" href="docs-page.html">Documentation</a>
-                            </li>
-                            <!-- <li class="nav-item dropdown mr-lg-4">
+                            <li class="nav-item dropdown mr-lg-4">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Documentation
 						        </a>
@@ -81,7 +116,7 @@
                                     <a class="dropdown-item has-icon" href="docs-page.html#section-8"><span class="theme-icon-holder mr-2"><i class="fas fa-book-reader fa-fw"></i></span>APIs</a>
                                     <a class="dropdown-item has-icon" href="docs-page.html#section-9"><span class="theme-icon-holder mr-2"><i class="fas fa-lightbulb fa-fw"></i></span>FAQs</a>
                                 </div>
-                            </li> -->
+                            </li>
                             <li class="nav-item mr-lg-4">
                                 <a class="nav-link" href="contact.html">Contact</a>
                             </li>
@@ -107,7 +142,7 @@
             <div class="row">
                 <div class="col-12 col-lg-6 pt-3 mb-5 mb-lg-0">
                     <h1 class="site-headline font-weight-bold mb-3">DataBridge Asia Inc. Launching software</h1>
-                    <div class="site-tagline mb-4">Designed for entrepreneurial software developers, Donec at erat vel quam cursus sagittis. Curabitur vestibulum mollis leo<span id="typewriter" class="text-primary font-weight-bold"></span>.</div>
+                    <div class="site-tagline mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at erat vel quam cursus sagittis. Curabitur vestibulum mollis leo<span id="typewriter" class="text-primary font-weight-bold"></span>.</div>
                     <div class="cta-btns mb-lg-3">
                         <a class="btn btn-primary mr-2 mb-3" href="pricing.html">Get Started<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
                         <a class="btn btn-secondary mb-3" href="docs-page.html#section-1">View Docs<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
@@ -488,7 +523,7 @@
         <div class="theme-bg-shapes-left"></div>
         <div class="container">
             <h3 class="mb-2 text-white mb-3">Get Started in No Time</h3>
-            <div class="section-intro text-white mb-3 single-col-max mx-auto">DataBridge Asia Inc. makes it super easy to get your software project online, so you can start promoting or selling your digital product to your audience.</div>
+            <div class="section-intro text-white mb-3 single-col-max mx-auto">DataBridge makes it super easy to get your software project online, so you can start promoting or selling your digital product to your audience.</div>
             <div class="pt-3 text-center">
                 <a class="btn btn-light" href="pricing.html">Get Started<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
             </div>
@@ -570,11 +605,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.6.11/core.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/1.0.0/typewriter.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
-    
     <script src="assets/js/tinyslider-custom.js"></script> -->
-
-    <!-- Page Service Worker Cached JS -->
-    <script src="assets/js/main.js"></script>
     <!-- Javascript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="assets/plugins/popper.min.js"></script>
@@ -584,9 +615,10 @@
     <!-- Page Specific JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
     <script src="assets/js/highlight-custom.min.js"></script>
+    <script src="assets/plugins/typewriterjs/core.min.js"></script>
+    <script src="assets/js/typewriter-custom.min.js"></script>
     <script src="assets/plugins/tiny-slider/tiny-slider.js"></script>
     <script src="assets/js/tinyslider-custom.js"></script>
-
 
 </body>
 
